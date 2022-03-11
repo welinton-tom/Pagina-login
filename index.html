@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mayumi</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<link href="style.css" rel="stylesheet">	
+
+	<style type="text/css">
+
+.bg-nav {background-color: #5451f5;}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: sans-serif, arial;
+}
+
+.faixa-header{
+	background-color: #5451f5;
+
+	height: 95px;
+}
+.lista{
+
+	margin-top: 30px;
+
+	margin-left: 110px;
+}
+
+.lista li{
+
+    display: inline-block;
+
+    list-style: none;
+}
+.lista li a{
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin: 1px 14px 1px 14px;
+}
+
+.card {
+
+    background-color: #fcfcfc;
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:32%;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: rgb(14, 13, 13);
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #fff;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: rgb(0, 0, 0);
+
+    font-size: 16px;
+
+    opacity: 0.8;
+
+	font-weight: bold;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 2px;
+
+    padding:0 5px;
+
+    background-color: #ccc;
+
+    border:none;
+
+    border: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: #fff;
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 40%;
+
+    height: 40px;
+
+    background-color: #ccc;
+
+    border:none;
+
+    color:#5451f5;;
+
+    margin: 10px 0;
+
+	font-size: 22px;
+
+	font-weight: bold;
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+
+	font-weight: bold;
+
+	color:#1f1cf3;;
+
+	position:absolute;
+
+	bottom: 105px;
+
+	right: 40px;
+}
+.card-cadastro{
+
+    font-size: 22px;
+
+	font-weight: bold;
+
+	position:absolute;
+
+	bottom: 10px;
+
+	left: 150px;
+}
+
+.card-cadastro a{
+	text-decoration: none;
+
+	color: rgb(139, 139, 139);
+}
+
+	</style>
+</head>
+
+<body>
+		<!-- topo -->
+		<div class="faixa-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h2 style="margin-top: 25px;">Listas</h2>
+					</div>
+					<div class="col-md-8">
+						<ul class="lista">
+							<li class="item">
+								<a href="#"> Como funciona a lista?</a>
+							<li class="item">
+								<a href="#">Sobre Nós</a>
+							<li class="item">
+								<a href="#">Contate-nos</a>
+							<li class="item">
+								<a href="#">Entre ou Cadastre-se</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- topo -->
+		<div id="login">
+
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h2>Login</h2>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-content-area">
+
+                        <label for="usuario">Usuário</label>
+
+                        <input type="text" id="usuario" autocomplete="off">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">Senha</label>
+
+                        <input type="password" id="password" autocomplete="off">
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <input type="submit" value="login" class="submit">
+
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+                </div>
+				<div class="card-cadastro">
+
+					<a href="#" class="cadastro">Cadastre-se</a>
+
+				</div>
+            </form>
+
+        </div>
+
+		
+		<!-- footer -->
+		<footer class="bg-nav text-center text-lg-start " style="margin-top: 100px;">
+			<!-- Grid container -->
+			<div class="container">
+				<!--Grid row-->
+				<div class="row">
+					<!--Grid column-->
+					<div class="col-md-6" style="margin-top: 20px; margin-top: 20px;">
+						<h5 class="text-uppercase" style="color: black!important;">REDES SOCIAIS</h5>
+
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(27, 27, 27)!important;">Instagram</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Facebook</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">TikTok</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Twitter</a>
+							</li>
+						</ul>
+					</div>
+					<!--Grid column-->
+
+					<!--Grid column-->
+					<div class="col-md-6" style="margin-top: 20px; margin-top: 20px;">
+						<h5 class="text-uppercase mb-0" style="color: black!important;">Links</h5>
+
+						<ul class="list-unstyled">
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Link 1</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Link 2</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Link 3</a>
+							</li>
+							<li>
+								<a href="#!" class="text-white" style="color: rgb(43, 42, 42)!important;">Link 4</a>
+							</li>
+						</ul>
+					</div>
+					<!--Grid column-->
+				</div>
+				<!--Grid row-->
+			</div>
+			<!-- Grid container -->
+
+		</footer>
+		<!-- footer -->
+
+
+</body>
+
+</html>
